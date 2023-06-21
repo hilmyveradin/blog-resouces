@@ -12,8 +12,8 @@ const ContactCards = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const mainButton = {
-    open: { rotate: 90, scale: 1.2 },
-    closed: { rotate: 0, scale: 1.2 },
+    open: { rotate: 90},
+    closed: { rotate: 0},
   };
 
   const listButtons = {
@@ -88,7 +88,6 @@ const ContactCards = () => {
         bottom="3rem"
         right="2rem"
         zIndex="sticky"
-        aria-label="Open helper"
         size="lg"
         icon={isOpen ? <FiX /> : <HiChatAlt2 />}
         onClick={() => setIsOpen(!isOpen)}
